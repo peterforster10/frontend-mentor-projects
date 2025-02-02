@@ -24,23 +24,20 @@ body {
   background-color: var(--slate-300-color);
   color: var(--slate-900-color);
   min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 h1, h2, h3 {
   font-weight: 700;
 }
 
-
-
-/**********************/
-/* GENERAL COMPONENTS */
-/**********************/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
 .main,
 .footer {
@@ -98,11 +95,6 @@ h1, h2, h3 {
 } */
 
 /* Phones, below 550px = 34em */
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
 
-  .container {
-    flex-direction: column;
-    gap: 7.2rem !important;
-  }
-}
-
+}*/
