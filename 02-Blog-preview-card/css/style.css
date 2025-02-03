@@ -34,7 +34,8 @@ body {
 }
 
 .main {
-  max-width: 38rem;
+  max-width: 42rem;
+  padding: 2rem;
 }
 
 .card {
