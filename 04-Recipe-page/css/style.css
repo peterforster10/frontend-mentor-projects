@@ -1,0 +1,144 @@
+:root {
+  --color-white: #fff;
+
+  --color-stone-100: #f3e6d8;
+  --color-stone-150: #e4ded8;
+  --color-stone-600: #5f574e;
+  --color-stone-900: #302d2c;
+
+  --color-brown-800: #854632;
+
+  --color-rose-800: #7b284f;
+  --color-rose-50: #fff5fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: var(--color-stone-100);
+  color: var(--color-stone-600);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 77rem;
+  margin-top: 5rem;
+}
+
+.recipe {
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 4.2rem;
+}
+
+.recipe-img {
+  max-width: 100%;
+  border-radius: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+
+.heading-primary {
+  font-family: 'Young Serif', serif;
+  color: var(--color-stone-900);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.heading-secondary {
+  font-family: 'Young Serif', serif;
+  color: var(--color-stone-900);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.card-link:link,
+.card-link:visited {
+  background-color: var(--color-grey-700);
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1.7rem;
+}
+
+.card-link:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover,
+.card-link:active {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Landscape tablets, below 1200 = 75em */
+@media (max-width: 1200px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .main {
+    flex-basis: 50rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
