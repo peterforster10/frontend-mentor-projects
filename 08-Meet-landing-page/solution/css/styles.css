@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/* remove all button styles */
+button {
+	all: unset;
+	cursor: pointer;
+}
+body {
+	min-height: 100vh;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 2.6rem;
+	overflow-x: hidden;
+}
+/* utilities */
+h1 {
+	font-size: 6.4rem;
+	font-weight: 1000;
+	line-height: 6.4rem;
+}
+h2 {
+	font-size: 4rem;
+	line-height: 4.4rem;
+}
+h1,
+h2 {
+	color: #28283d;
+	font-weight: 1000;
+}
+
+.overline {
+	color: #4d96a9;
+	font-size: 1.6rem;
+	font-weight: 1000;
+	text-transform: uppercase;
+	line-height: 2.6rem;
+	letter-spacing: 0.4rem;
+}
+.btn-1 {
+	background-color: #4d96a9;
+}
+.btn-2 {
+	background-color: #855fb1;
+}
+.btn-1,
+.btn-2 {
+	padding: 1.5rem 4.7rem;
+	color: white;
+	border: none;
+	border-radius: 4rem;
+	font-size: 1.6rem;
+	font-weight: 1000;
+}
+.btn-1:hover {
+	background-color: #71c0d4;
+}
+.btn-2:hover {
+	background-color: #b188dd;
+}
+.btn-span-1 {
+	color: #8fe3f9;
+}
+.btn-span-2 {
+	color: #d9b8ff;
+}
+.btn-span-1,
+.btn-span-2 {
+	font-size: 1.6rem;
+	font-weight: 1000;
+}
+
+.divider {
+	padding-top: 15rem;
+	padding-bottom: 7rem;
+}
+.divider-2 .number-bar {
+	position: relative;
+	top: 2.8rem;
+}
+.number-bar,
+.number-one,
+.number-two {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+.number-bar {
+	width: 0.1rem;
+	height: 8.4rem;
+	background-color: rgba(135, 135, 135, 0.25);
+}
+.number-one,
+.number-two {
+	width: 5.6rem;
+	height: 5.6rem;
+	border-radius: 6.25rem;
+	border: 0.1rem solid rgba(135, 135, 135, 0.25);
+	font-weight: 1000;
+	color: #87879d;
+	font-size: 1.6rem;
+}
+.number-two {
+	position: relative;
+	top: 2.8rem;
+	z-index: 2;
+	background-color: white;
+}
+.text-grey {
+	font-size: 1.8rem;
+	color: #87879d;
+	padding-bottom: 3rem;
+}
+/* header */
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+}
+/* hero */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 35.8rem;
+}
+.hero-title {
+	max-width: 44.5rem;
+	padding-top: 9rem;
+	padding-bottom: 3rem;
+}
+.hero p {
+	max-width: 54rem;
+}
+.hero-text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hero-img-left {
+	position: relative;
+	left: -5rem;
+}
+.hero-img-right {
+	position: relative;
+	right: -5rem;
+	top: 55px;
+}
+.hero-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+/* ------------------- */
+.modern {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.modern p {
+	text-align: center;
+}
+.modern-text {
+	padding-top: 8rem;
+	width: 35%;
+}
+.overline {
+	padding-bottom: 1.5rem;
+}
+.modern-text h2 {
+	text-align: center;
+	padding-bottom: 4rem;
+}
+.modern-img {
+	max-width: 1100px;
+	max-height: 242px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+.modern-img img {
+	max-width: 100%;
+	max-height: 24rem;
+	border-radius: 1rem;
+	gap: 3rem;
+}
+/* FOOTER */
+.footer {
+	width: 100%;
+	height: 308px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), url('../desktop/image-footer.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+.footer h2 {
+	color: white;
+}
+.footer p {
+	font-size: 1.8rem;
+	width: 24%;
+}
+.hero-img-mobile {
+	display: none;
+}
+/* TODO: WYCZYSCIC LADNIE KOD I ZOBACZYC CZY NIE TRZEBA CZEGOS POZMIENIAC */
+/* media */
+@media (max-width: 768px) {
+	.header {
+		height: 15vh;
+	}
+	.hero {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.hero-img-left,
+	.hero-img-right {
+		display: none;
+	}
+	.hero-img-mobile {
+		display: block;
+	}
+	.hero-img-mobile img {
+		max-width: 100%;
+	}
+	.hero-text-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.divider {
+		padding-top: 45rem;
+		padding-bottom: 7rem;
+	}
+	.modern-img {
+		width: 16.5rem;
+		gap: 1rem;
+	}
+	.modern-text {
+		padding-top: 6rem;
+		width: 75%;
+	}
+	.text-grey {
+		font-size: 1.6rem;
+	}
+	.footer {
+		height: 60rem;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+		background: linear-gradient(rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), url('../tablet/image-footer.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.footer h2 {
+		padding-bottom: 4rem;
+	}
+	.footer p {
+		width: 75%;
+		padding-bottom: 4rem;
+	}
+}
+@media (max-width: 414px) {
+	.header {
+		height: 20vh;
+	}
+	.hero-title {
+		font-size: 5rem;
+	}
+	.text-grey {
+		font-size: 1.6rem;
+	}
+	.hero-btn-container {
+		flex-direction: column;
+	}
+	.modern-img {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 80%;
+
+		gap: 2rem;
+	}
+	.modern-text {
+		padding-top: 15rem;
+	}
+	.modern-heading {
+		font-size: 3rem;
+	}
+}
