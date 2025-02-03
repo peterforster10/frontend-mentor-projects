@@ -207,7 +207,13 @@ strong {
 
 
 /* Landscape tablets, below 1200 = 75em */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
+
+} */
+
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
   html {
     /* Decreases all rem values on the page. */
     /* 9px / 16px = 56.25% */
