@@ -71,8 +71,8 @@ body {
 
 .heading-secondary {
   font-family: 'Young Serif', serif;
-  color: var(--color-stone-900);
-  font-size: 1.6rem;
+  color: var(--color-brown-800);
+  font-size: 2.5rem;
   line-height: 1.4;
   font-weight: 400;
   margin-bottom: 1.2rem;
@@ -82,32 +82,40 @@ body {
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 400;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
 }
 
-.card-link:link,
-.card-link:visited {
-  background-color: var(--color-grey-700);
-  color: white;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
+.info-box {
+  border-radius: 1.2rem;
+  padding: 2.2rem;
+  background-color: var(--color-rose-50);
+  margin-bottom: 3rem;
+}
+
+.info-box-title {
+  font-size: 2rem;
   font-weight: 600;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 1.7rem;
+  color: var(--color-rose-800);
+  margin-bottom: 1.5rem;
 }
 
-.card-link:last-child {
+.info-box-list {
+  margin-left: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-stone-600);
+}
+
+.info-box-list li {
+  margin-bottom: 0.5rem;
+}
+
+.info-box-list li:last-child {
   margin-bottom: 0;
 }
 
-.card-link:hover,
-.card-link:active {
-  background-color: var(--color-green);
-  color: var(--color-grey-900);
+strong {
+  font-weight: 600;
 }
 
 .text-centered {
