@@ -1,0 +1,140 @@
+:root {
+  --yellow-color: #f4d04e;
+  --white-color: #fff;
+  --gray-500-color: #6b6b6b;
+  --gray-950-color: #121212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: var(--yellow-color);
+  color: var(--gray-950-color);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 38rem;
+}
+
+.card {
+  padding: 2.3rem;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  min-height: 50rem;
+  border: 1px solid black;
+  box-shadow: 8px 8px;
+}
+
+.card-details {
+  margin-top: 1.8rem;
+}
+
+.card-tag {
+  display: inline-block;
+  padding: 0.4rem 1.3rem;
+  background-color: var(--yellow-color);
+  border-radius: 4px;
+  color: var(--gray-950-color);
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-subtitle {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+.card-title-link:link,
+.card-title-link:visited {
+  color: var(--slate-900-color);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-title-link:hover,
+.card-title-link:active {
+  color: var(--yellow-color);
+}
+
+.card-text {
+  color: var(--gray-500-color);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.card-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+}
+
+.author-name {
+  font-weight: 900;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* Landscape tablets, below 1200 = 75em */
+@media (max-width: 1200px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
