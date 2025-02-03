@@ -1,0 +1,140 @@
+:root {
+  --color-green: #c5f82a;
+  --color-white: #fff;
+
+  --color-grey-700: #333333;
+  --color-grey-800: #1f1f1f;
+  --color-grey-900: #0f0909;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.4rem;
+  background-color: var(--color-grey-900);
+  color: var(--color-white);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 43rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--color-grey-800);
+  padding: 4rem;
+  border-radius: 10px;
+  min-height: 61rem;
+}
+
+.card-img-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.6rem;
+}
+
+.card-img {
+  max-width: 9rem;
+  border-radius: 50%;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.card-subtitle {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--color-green);
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+
+.card-link:link,
+.card-link:visited {
+  background-color: var(--color-grey-700);
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1.7rem;
+}
+
+.card-link:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover,
+.card-link:active {
+  background-color: var(--color-green);
+  color: var(--color-grey-900);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Landscape tablets, below 1200 = 75em */
+@media (max-width: 1200px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .main {
+    flex-basis: 50rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
