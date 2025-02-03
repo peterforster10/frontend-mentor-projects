@@ -42,7 +42,7 @@ body {
 
 .main {
   flex-basis: 77rem;
-  margin: 10rem 0;
+  margin: 12rem 0;
 }
 
 .recipe {
@@ -105,6 +105,10 @@ body {
 .list li::marker {
   color: var(--color-brown-800);
   font-weight: 600;
+}
+
+ul.list li::marker {
+  font-size: 1.4rem;
 }
 
 .list li > span {
@@ -174,6 +178,7 @@ body {
 
 .info-box-list li::marker {
   color: var(--color-rose-800);
+  font-size: 1.4rem;
 }
 
 .info-box-list li > span {
