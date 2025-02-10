@@ -1,11 +1,14 @@
 :root {
   --color-white: #fff;
 
-  --color-dark-cyan: #3c8067;
-  --color-cream: #f2ebe3;
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
 
-  --color-dark-blue: #1c232b;
-  --color-dark-grey: #6c7289;
+  --color-dark-gray: #4c4e61;
+  --color-gray: #a3a5ae;
+  --color-light-gray: #fafafa;
 }
 
 * {
@@ -20,12 +23,12 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  font-weight: 500;
-  font-size: 1.4rem;
-  background-color: var(--color-cream);
-  color: var(--color-dark-blue);
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
   min-height: 100vh;
 }
 
@@ -37,106 +40,99 @@ body {
 }
 
 .main {
-  flex-basis: 62rem;
+  flex-basis: 100rem;
 }
 
-.item {
-  background-color: white;
-  border-radius: 11px;
-  overflow: hidden;
-
+.header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
 }
 
-.item-img-box,
-.item-details-box {
-  flex: 1;
+.header-box {
+  flex-basis: 52rem;
 }
 
-.item-img-picture {
-  display: flex;
-}
-
-.item-img {
-  max-width: 100%;
-}
-
-.item-details {
-  padding: 3.2rem;
-}
-
-.item-subtitle {
-  color: var(--color-dark-grey);
-  font-size: 1.4rem;
-  line-height: 1.6;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
   margin-bottom: 2rem;
 }
 
-.item-title {
-  font-family: 'Fraunces', serif;
+.subheading {
   font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 2.5rem;
-  letter-spacing: -0.5px;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 
-.item-text {
-  color: var(--color-dark-grey);
-  font-size: 1.4rem;
+.text {
+  color: var(--color-gray);
+  font-size: 1.5rem;
   line-height: 1.6;
-  font-weight: 500;
-  margin-bottom: 2.5rem;
+  font-weight: 400;
 }
 
-.item-prices {
-  font-family: 'Fraunces', serif;
+.card-container {
   display: flex;
-  gap: 2rem;
+  gap: 2.7rem;
   align-items: center;
-  margin-bottom: 2.5rem;
 }
 
-.item-price {
-  color: var(--color-dark-cyan);
-  font-size: 3.5rem;
-  font-weight: 700;
+.card-box {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 3rem;
+  box-shadow: 0 7px 18px rgba(97, 98, 158, 0.2);
+}
+
+.card-red {
+  border-top: 5px solid var(--color-red);
+}
+
+.card-cyan {
+  border-top: 5px solid var(--color-cyan);
+}
+
+.card-orange {
+  border-top: 5px solid var(--color-orange);
+}
+
+.card-blue {
+  border-top: 5px solid var(--color-blue);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 1;
+  margin-bottom: 1.5rem;
 }
 
-.item-price-original {
-  color: var(--color-dark-grey);
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-decoration: line-through;
+.card-text {
+  color: var(--color-gray);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
 
-.add-to-card-btn {
+.icon-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  padding: 1.4rem;
-
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-  border-radius: 8px;
-  background-color: var(--color-dark-cyan);
-  color: white;
-  width: 100%;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  justify-content: flex-end;
 }
 
-.add-to-card-btn:hover,
-.add-to-card-btn:active {
-  background-color: #1e4034;
+.text-centered {
+  text-align: center;
 }
 
 /* Tablets, below 944px = 59em */
