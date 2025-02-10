@@ -1,0 +1,155 @@
+:root {
+  --color-white: #fff;
+
+  --color-dark-cyan: #3c8067;
+  --color-cream: #f2ebe3;
+
+  --color-dark-blue: #1c232b;
+  --color-dark-grey: #6c7289;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.4rem;
+  background-color: var(--color-cream);
+  color: var(--color-dark-blue);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 62rem;
+}
+
+.item {
+  background-color: white;
+  border-radius: 11px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.item-img-box,
+.item-details-box {
+  flex: 1;
+}
+
+.item-img-picture {
+  display: flex;
+}
+
+.item-img {
+  max-width: 100%;
+}
+
+.item-details {
+  padding: 3.2rem;
+}
+
+.item-subtitle {
+  color: var(--color-dark-grey);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+.item-title {
+  font-family: 'Fraunces', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.item-text {
+  color: var(--color-dark-grey);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.item-prices {
+  font-family: 'Fraunces', serif;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.item-price {
+  color: var(--color-dark-cyan);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.item-price-original {
+  color: var(--color-dark-grey);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.add-to-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1.4rem;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: var(--color-dark-cyan);
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
