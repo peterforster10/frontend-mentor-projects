@@ -36,4 +36,13 @@ Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/04-Recipe-page
 
 
+## 05 Product Preview Card
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/05-product-preview-card
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/05-Product-preview-card
+
+
 
