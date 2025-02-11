@@ -40,7 +40,7 @@ body {
 }
 
 .main {
-  flex-basis: 100rem;
+  flex-basis: 117rem;
 }
 
 .header {
@@ -76,8 +76,9 @@ body {
 
 .card-container {
   display: flex;
-  gap: 2.7rem;
+  gap: 3rem;
   align-items: center;
+  padding: 0 3rem;
 }
 
 .card-box {
@@ -85,7 +86,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 2.7rem;
+  gap: 3rem;
 }
 
 .card {
@@ -143,30 +144,37 @@ body {
     font-size: 56.25%;
   }
 
-  .item-details {
-    padding: 2.5rem;
-  }
-
-  .item-text,
-  .add-to-card-btn {
-    font-size: 1.5rem;
-  }
-
   .main {
-    margin: 2rem;
+    margin: 10rem 0;
   }
 
-  .item {
+  .header {
+    margin-bottom: 8rem;
+  }
+
+  .header-box {
+    padding: 0 3.5rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+
+  .subheading {
+    font-size: 2.4rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: initial;
+    padding: 0 3.5rem;
+  }
+
+  .card-box {
     flex-direction: column;
   }
-}
 
-/* Tablets, below 944px = 59em */
-/* @media (max-width: 944px) {
-  html {
-    font-size: 50%;
-  }
-} */
+}
 
 /* Phones, below 550px = 34em */
 /* @media (max-width: 550px) {
