@@ -1,0 +1,182 @@
+:root {
+  --color-white: #fff;
+
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+
+  --color-dark-gray: #4c4e61;
+  --color-gray: #a3a5ae;
+  --color-light-gray: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 117rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.header-box {
+  flex-basis: 52rem;
+}
+
+.heading-primary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.subheading {
+  font-size: 3.5rem;
+  font-weight: 200;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.card-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.card-box {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 3rem;
+  box-shadow: 0 7px 18px rgba(97, 98, 158, 0.2);
+}
+
+.card-red {
+  border-top: 5px solid var(--color-red);
+}
+
+.card-cyan {
+  border-top: 5px solid var(--color-cyan);
+}
+
+.card-orange {
+  border-top: 5px solid var(--color-orange);
+}
+
+.card-blue {
+  border-top: 5px solid var(--color-blue);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  color: var(--color-gray);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .main {
+    margin: 10rem 0;
+  }
+
+  .header {
+    margin-bottom: 8rem;
+  }
+
+  .header-box {
+    padding: 0 3.5rem;
+  }
+
+  .heading-primary {
+    font-size: 2.6rem;
+  }
+
+  .subheading {
+    font-size: 2.4rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: initial;
+    padding: 0 3.5rem;
+  }
+
+  .card-box {
+    flex-direction: column;
+  }
+
+}
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
