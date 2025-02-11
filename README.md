@@ -52,3 +52,12 @@ https://frontend-mentor-projects-peterforster.netlify.app/06-four-card-feature-s
 
 Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/06-Four-card-feature-section
+
+
+## 07 Testimonials Grid Section
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/07-testimonials-grid-section
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/07-Testimonials-grid-section
