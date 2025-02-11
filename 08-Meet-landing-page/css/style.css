@@ -1,0 +1,130 @@
+:root {
+  --color-dark-cyan: #4d96a8;
+  --color-dark-violet: #845eb0;
+
+  --color-light-cyan: #90e4f9;
+  --color-light-violet: #d9b8ff;
+
+  --color-dark-gray: #373752;
+  --color-gray: #86869c;
+  --color-light-gray: #86869c40;
+  --color-very-light-gray: #fafafa;
+
+  --color-cyan-tint: #72c1d5;
+  --color-violet-tint: #b28cde;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: var(--color-very-light-gray);
+  color: var(--color-dark-gray);
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-box {
+  margin-top: 7rem;
+  margin-bottom: 6rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  flex-basis: 140rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-content {
+  padding: 1.5rem 0;
+}
+
+.hero-img-box.left-box {
+  align-self: flex-start;
+}
+
+.hero-img-box.right-box {
+  align-self: flex-end;
+}
+
+
+.hero-heading {
+  color: var(--color-dark-gray);
+  font-size: 6.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.gradient {
+  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hero-text {
+  color: var(--color-gray);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 1.8rem 3.4rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.btn-cyan {
+  color: white;
+  background-color: var(--color-dark-cyan);
+}
+
+.btn-cyan:hover,
+.btn-cyan:active {
+  background-color: var(--color-cyan-tint);
+}
