@@ -25,7 +25,7 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
   background-color: var(--color-light-gray);
-  color: var(--color-very-dark-gray);
+  color: var(--color-dark-gray);
   min-height: 100vh;
 }
 
@@ -72,7 +72,20 @@ body {
 
 .card-purple {
   background-color: var(--color-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: right 75px top;
+  background-repeat: no-repeat;
   color: white;
+}
+
+.card-purple .customer-name,
+.card-purple .testimonial-text {
+  opacity: 0.95;
+}
+
+.card-purple .customer-verification,
+.card-purple .text-muted {
+  opacity: 0.7;
 }
 
 .card-gray {
@@ -89,25 +102,42 @@ body {
   background-color: white;
 }
 
-.heading-primary {
-  font-size: 3.5rem;
+.customer {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.customer-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.customer-verification {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.testimonial-text {
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
-.subheading {
-  font-size: 3.5rem;
-  font-weight: 200;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-}
-
-.text {
-  color: var(--color-gray);
-  font-size: 1.5rem;
-  line-height: 1.6;
+.testimonial-quote {
+  font-size: 1.3rem;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 
