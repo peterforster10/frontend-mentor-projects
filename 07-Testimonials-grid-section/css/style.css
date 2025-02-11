@@ -1,14 +1,11 @@
 :root {
   --color-white: #fff;
 
-  --color-red: #ea5353;
-  --color-cyan: #45d3d3;
-  --color-orange: #fcaf4a;
-  --color-blue: #549ef2;
-
-  --color-dark-gray: #4c4e61;
-  --color-gray: #a3a5ae;
-  --color-light-gray: #fafafa;
+  --color-violet: #7541c8;
+  --color-dark-gray: #48556a;
+  --color-very-dark-gray: #19212e;
+  --color-gray: #cfcfcf;
+  --color-light-gray: #ecf2f8;
 }
 
 * {
@@ -23,34 +20,73 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   line-height: 1.6;
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   background-color: var(--color-light-gray);
-  color: var(--color-dark-gray);
+  color: var(--color-very-dark-gray);
   min-height: 100vh;
 }
 
-.container {
+.main {
+  min-height: 100vh;
+}
+
+.section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main {
-  flex-basis: 117rem;
+.container {
+  flex-basis: 116rem;
+  padding: 0 3rem;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6rem;
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
 }
 
-.header-box {
-  flex-basis: 52rem;
+.testimonial-card:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.testimonial-card:nth-child(4) {
+  grid-row: 2;
+  grid-column: 2 / span 2;
+}
+
+.testimonial-card:nth-child(5) {
+  grid-row: 1 / span 2;
+  grid-column: 4;
+}
+
+.testimonial-card {
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.card-purple {
+  background-color: var(--color-violet);
+  color: white;
+}
+
+.card-gray {
+  background-color: var(--color-dark-gray);
+  color: white;
+}
+
+.card-dark-gray {
+  background-color: var(--color-very-dark-gray);
+  color: white;
+}
+
+.card-white {
+  background-color: white;
 }
 
 .heading-primary {
@@ -74,12 +110,7 @@ body {
   font-weight: 400;
 }
 
-.card-container {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  padding: 0 3rem;
-}
+
 
 .card-box {
   flex: 1;
