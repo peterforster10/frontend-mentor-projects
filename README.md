@@ -45,7 +45,7 @@ Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/05-Product-preview-card
 
 
-## 05 Product Preview Card
+## 06 Four card feature section
 
 Live:
 https://frontend-mentor-projects-peterforster.netlify.app/06-four-card-feature-section
