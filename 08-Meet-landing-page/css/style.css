@@ -300,7 +300,7 @@ body {
 
 .about-img:hover {
   scale: 1.05;
-  filter: saturate(2);
+  filter: saturate(1.5);
 }
 
 .about-content-container {
