@@ -146,7 +146,7 @@ body {
 
 .hero-container {
   flex-basis: 140rem;
-  padding-bottom: 7rem;
+  padding: 0 2rem 7rem 2rem;
 
   display: flex;
   align-items: center;
