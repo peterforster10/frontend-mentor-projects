@@ -62,14 +62,24 @@ body {
   padding: 1.5rem 0;
 }
 
-.hero-img-box.left-box {
+.hero-img-left-box {
+  content: url(../images/desktop/image-hero-left.png);
   align-self: flex-start;
+  transition: all 0.15s ease-in-out;
 }
 
-.hero-img-box.right-box {
+.hero-img-left-box:hover {
+  content: url(../images/desktop/image-hero-left-hover.png);
+}
+
+.hero-img-right-box {
+  content: url(../images/desktop/image-hero-right.png);
   align-self: flex-end;
 }
 
+.hero-img-right-box:hover {
+  content: url(../images/desktop/image-hero-right-hover.png);
+}
 
 .hero-heading {
   color: var(--color-dark-gray);
