@@ -35,23 +35,117 @@ body {
   min-height: 100vh;
 }
 
+
+/**********************/
+/* GENERAL COMPONENTS */
+/**********************/
+
+.heading-primary {
+  color: var(--color-dark-gray);
+  font-size: 6.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.gradient {
+  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.4;
+  color: var(--color-dark-cyan);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heading-secondary {
+  color: var(--color-dark-gray);
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+.text {
+  color: var(--color-gray);
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-family: inherit;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 2rem 3.5rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.mb-1 {
+  margin-bottom: 2.4rem;
+}
+
+.mb-2 {
+  margin-bottom: 3.2rem;
+}
+
+.mb-3 {
+  margin-bottom: 4.8rem;
+}
+
+.mb-4 {
+  margin-bottom: 6.4rem;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+
+
+/**********************/
+/* HEADER */
+/**********************/
+
 .header {
   display: flex;
   justify-content: center;
 }
 
 .logo-box {
-  margin-top: 7rem;
-  margin-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
 }
 
-.hero {
+.section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+
+
+/**********************/
+/* HERO */
+/**********************/
 
 .hero-container {
   flex-basis: 140rem;
+  padding-bottom: 5rem;
 
   display: flex;
   align-items: center;
@@ -81,52 +175,18 @@ body {
   content: url(../images/desktop/image-hero-right-hover.png);
 }
 
-.hero-heading {
-  color: var(--color-dark-gray);
-  font-size: 6.5rem;
-  font-weight: 900;
-  line-height: 1;
-  margin-bottom: 4rem;
-}
-
-.gradient {
-  background: linear-gradient(92.19deg, #855FB1 -15.84%, #4D96A9 114.64%);
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
 .hero-text {
   color: var(--color-gray);
   font-size: 1.8rem;
   line-height: 1.6;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 .hero-btns {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.text-centered {
-  text-align: center;
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-  font-family: inherit;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 900;
-  padding: 1.8rem 3.4rem;
-  border-radius: 10rem;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  line-height: 1;
+  gap: 2rem;
 }
 
 .btn-cyan {
@@ -134,7 +194,104 @@ body {
   background-color: var(--color-dark-cyan);
 }
 
+.btn-cyan > span {
+  color: var(--color-light-cyan);
+}
+
 .btn-cyan:hover,
 .btn-cyan:active {
   background-color: var(--color-cyan-tint);
+}
+
+.btn-violet {
+  color: var(--color-light-violet);
+  background-color: var(--color-dark-violet);
+}
+
+.btn-violet:hover,
+.btn-violet:active {
+  background-color: var(--color-violet-tint);
+}
+
+
+
+/**********************/
+/* DIVIDER */
+/**********************/
+
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider-content {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-gray);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 100px;
+  width: 5.5rem;
+  height: 5.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.divider-line {
+  height: 4rem;
+  width: 1px;
+  border-left: 1px solid var(--color-light-gray);
+}
+
+
+/**********************/
+/* ABOUT */
+/**********************/
+
+.about-container {
+  flex-basis: 110rem;
+  padding: 10rem 0 10rem 0;
+}
+
+.about-img-container {
+  display: flex;
+  gap: 3rem;
+
+  margin-bottom: 5rem;
+}
+
+.about-img-box {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about-img {
+  display: block;
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-img:hover {
+  scale: 1.05;
+  filter: saturate(2);
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  flex-basis: 60rem;
+  text-align: center;
 }
