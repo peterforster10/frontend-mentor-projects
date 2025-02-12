@@ -146,7 +146,7 @@ body {
 
 .hero-container {
   flex-basis: 140rem;
-  padding: 0 2rem 7rem 2rem;
+  padding: 0 3rem 7rem 3rem;
 
   display: flex;
   align-items: center;
@@ -162,22 +162,16 @@ body {
   max-width: 25%;
 }
 
+.hero-img {
+  max-width: 100%;
+}
+
 .hero-img-left-box {
-  content: url(../images/desktop/image-hero-left.png);
   align-self: flex-start;
 }
 
-.hero-img-left-box:hover {
-  content: url(../images/desktop/image-hero-left-hover.png);
-}
-
 .hero-img-right-box {
-  content: url(../images/desktop/image-hero-right.png);
   align-self: flex-end;
-}
-
-.hero-img-right-box:hover {
-  content: url(../images/desktop/image-hero-right-hover.png);
 }
 
 .hero-img-mobile-box {
@@ -400,11 +394,6 @@ body {
   .hero-img-mobile-box {
     display: block;
     max-width: 100%;
-    content: url(../images/tablet/image-hero.png);
-  }
-  
-  .hero-img-mobile-box:hover {
-    content: url(../images/tablet/image-hero-hover.png);
   }
   
   .about-content {
