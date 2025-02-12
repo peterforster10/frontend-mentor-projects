@@ -57,7 +57,7 @@ body {
 }
 
 .subheading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.4;
   color: var(--color-dark-cyan);
@@ -128,7 +128,7 @@ body {
 }
 
 .logo-box {
-  padding-top: 7rem;
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
@@ -150,7 +150,7 @@ body {
 
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .hero-content {
@@ -159,7 +159,7 @@ body {
 
 .hero-img-left-box,
 .hero-img-right-box {
-  max-width: 30%;
+  max-width: 25%;
 }
 
 .hero-img-left-box {
@@ -427,6 +427,10 @@ body {
 
   .heading-primary {
     font-size: 5.5rem;
+  }
+
+  .subheading {
+    font-size: 2rem;
   }
 
   .text {
