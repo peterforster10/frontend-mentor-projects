@@ -146,7 +146,7 @@ body {
 
 .hero-container {
   flex-basis: 140rem;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 
   display: flex;
   align-items: center;
@@ -281,7 +281,7 @@ body {
 
 .about-container {
   flex-basis: 110rem;
-  padding: 10rem 0 6rem 0;
+  padding: 7rem 0 6rem 0;
 }
 
 .about-img-container {
@@ -350,7 +350,7 @@ body {
 
 .footer-container {
   flex-basis: 110rem;
-  padding: 12rem 0;
+  padding: 10em 3rem;
 
   display: flex;
   align-items: center;
@@ -389,6 +389,7 @@ body {
   .hero-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 3rem 7rem 3rem;
   }
 
   .hero-img-left-box,
@@ -405,11 +406,37 @@ body {
   .hero-img-mobile-box:hover {
     content: url(../images/tablet/image-hero-hover.png);
   }
+  
+  .about-content {
+    padding: 0 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    flex-basis: 60rem;
+    text-align: center;
+  }
 
 }
 
 /* Phones, below 550px = 34em */
 @media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-primary {
+    font-size: 5.5rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+
   .about-img-container {
     grid-template-columns: repeat(2, 1fr);
   }
