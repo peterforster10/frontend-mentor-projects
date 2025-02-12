@@ -150,17 +150,21 @@ body {
 
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .hero-content {
   padding: 1.5rem 0;
 }
 
+.hero-img-left-box,
+.hero-img-right-box {
+  max-width: 30%;
+}
+
 .hero-img-left-box {
   content: url(../images/desktop/image-hero-left.png);
   align-self: flex-start;
-  transition: all 0.15s ease-in-out;
 }
 
 .hero-img-left-box:hover {
@@ -174,6 +178,10 @@ body {
 
 .hero-img-right-box:hover {
   content: url(../images/desktop/image-hero-right-hover.png);
+}
+
+.hero-img-mobile-box {
+  display: none;
 }
 
 .hero-text {
@@ -277,14 +285,15 @@ body {
 }
 
 .about-img-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
+  padding: 3rem;
 
   margin-bottom: 6rem;
 }
 
 .about-img-box {
-  flex: 1;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -346,4 +355,62 @@ body {
   display: flex;
   align-items: center;
   gap: 6rem;
+}
+
+/* Landscape tablets, below 1200 = 75em */
+@media (max-width: 1200px) {
+  .hero-container {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .hero-content {
+    max-width: 50rem;
+  }
+
+  .hero-img-left-box {
+    display: none;
+  }
+
+  .hero-img-right-box {
+    max-width: 35%;
+    align-self: center;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-img-left-box,
+  .hero-img-right-box {
+    display: none;
+  }
+
+  .hero-img-mobile-box {
+    display: block;
+    max-width: 100%;
+    content: url(../images/tablet/image-hero.png);
+  }
+  
+  .hero-img-mobile-box:hover {
+    content: url(../images/tablet/image-hero-hover.png);
+  }
+
+}
+
+/* Phones, below 550px = 34em */
+@media (max-width: 550px) {
+  .about-img-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
