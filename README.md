@@ -61,3 +61,12 @@ https://frontend-mentor-projects-peterforster.netlify.app/07-testimonials-grid-s
 
 Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/07-Testimonials-grid-section
+
+
+## 08 Meet landing page
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/08-meet-landing-page
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/08-Meet-landing-page
