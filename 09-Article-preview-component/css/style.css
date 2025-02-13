@@ -140,9 +140,8 @@ body {
 }
 
 .share-tooltip {
-  /* display: none; */
   position: absolute;
-  top: -80px;
+  top: -8rem;
   left: 50%;
   transform: translateX(-50%);;
   z-index: 1;
@@ -155,14 +154,17 @@ body {
   display: flex;
   align-items: center;
   gap: 1.4rem;
+
+  transition: all 0.15s ease-in-out;
 }
+
 
 .share-tooltip::before {
   /* display: none; */
   content: "";
 
   position: absolute;
-  top: 57px;
+  top: 5.7rem;
   left: 50%;
   transform: translateX(-50%);
 
@@ -185,25 +187,11 @@ body {
   line-height: 1;
 }
 
-.add-to-card-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-
-  padding: 1.4rem;
-
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-  border-radius: 12px;
-  background-color: var(--color-dark-cyan);
-  color: white;
-  width: 100%;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
-
 
 
 /* Tablets, below 944px = 59em */
