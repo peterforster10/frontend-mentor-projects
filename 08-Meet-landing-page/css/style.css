@@ -406,6 +406,7 @@ body {
 
   .footer-container {
     flex-direction: column;
+    gap: 4rem;
     flex-basis: 60rem;
     text-align: center;
   }
