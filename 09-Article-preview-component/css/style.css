@@ -1,0 +1,187 @@
+:root {
+  --color-white: #fff;
+
+  --color-very-dark-grey: #48556a;
+  --color-dark-gray: #6d7f97;
+  --color-gray: #9eafc2;
+  --color-light-gray: #ecf2f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: var(--color-light-gray);
+  color: var(--color-very-dark-grey);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 72rem;
+}
+
+.post {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: stretch;
+}
+
+.post-img-box {
+  flex-basis: 40%;
+  overflow: hidden;
+}
+
+.post-img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.post-content {
+  flex: 1;
+  padding: 3.5rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.5px;
+}
+
+.post-text {
+  color: var(--color-dark-gray);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.author-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.author-name {
+  color: var(--color-very-dark-gray);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.author-date {
+  color: var(--color-gray);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.share-link {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  border-radius: 100px;
+  line-height: 1;
+}
+
+
+.add-to-card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 1.4rem;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  border-radius: 12px;
+  background-color: var(--color-dark-cyan);
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.add-to-card-btn:hover,
+.add-to-card-btn:active {
+  background-color: #1e4034;
+}
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .item-details {
+    padding: 2.5rem;
+  }
+
+  .item-text,
+  .add-to-card-btn {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    margin: 2rem;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
