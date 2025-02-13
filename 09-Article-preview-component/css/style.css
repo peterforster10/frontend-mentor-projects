@@ -122,12 +122,17 @@ body {
   justify-content: center;
   background-color: var(--color-light-gray);
   border-radius: 100px;
+  transition: all 0.15s ease-in-out;
 }
 
 .share-link:hover,
 .share-link:active {
-  background-color: var(--color-dark-gray);
-  color: white;
+  background-color: var(--color-gray);
+}
+
+.share-link:hover img,
+.share-link:active img {
+  filter: brightness(100);
 }
 
 .post-share {
@@ -135,6 +140,7 @@ body {
 }
 
 .share-tooltip {
+  /* display: none; */
   position: absolute;
   top: -80px;
   left: 50%;
@@ -152,6 +158,7 @@ body {
 }
 
 .share-tooltip::before {
+  /* display: none; */
   content: "";
 
   position: absolute;
