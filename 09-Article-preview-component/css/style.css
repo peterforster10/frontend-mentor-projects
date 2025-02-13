@@ -155,7 +155,6 @@ body {
   align-items: center;
   gap: 1.4rem;
 
-  transition: all 0.15s ease-in-out;
 }
 
 
@@ -188,9 +187,7 @@ body {
 }
 
 .hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 
@@ -202,21 +199,15 @@ body {
     font-size: 56.25%;
   }
 
-  .item-details {
-    padding: 2.5rem;
-  }
-
-  .item-text,
-  .add-to-card-btn {
-    font-size: 1.5rem;
-  }
-
-  .main {
-    margin: 2rem;
-  }
-
-  .item {
+  .post {
     flex-direction: column;
+  }
+
+  
+  .post-img-box {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
   }
 }
 
