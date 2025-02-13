@@ -1,7 +1,7 @@
 :root {
   --color-white: #fff;
 
-  --color-very-dark-grey: #48556a;
+  --color-very-dark-gray: #48556a;
   --color-dark-gray: #6d7f97;
   --color-gray: #9eafc2;
   --color-light-gray: #ecf2f8;
@@ -24,7 +24,7 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
   background-color: var(--color-light-gray);
-  color: var(--color-very-dark-grey);
+  color: var(--color-very-dark-gray);
   min-height: 100vh;
 }
 
@@ -40,15 +40,16 @@ body {
 }
 
 .post {
-  background-color: white;
   border-radius: 10px;
-  overflow: hidden;
+  background-color: white;
 
   display: flex;
   align-items: stretch;
 }
 
 .post-img-box {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   flex-basis: 40%;
   overflow: hidden;
 }
@@ -79,7 +80,7 @@ body {
   font-size: 1.3rem;
   line-height: 1.6;
   font-weight: 500;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .post-footer {
@@ -112,17 +113,70 @@ body {
   line-height: 1.6;
 }
 
-.share-link {
-  width: 30px;
-  height: 30px;
+.share-link:link,
+.share-link:visited {
+  width: 35px;
+  height: 35px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-light-gray);
   border-radius: 100px;
-  line-height: 1;
 }
 
+.share-link:hover,
+.share-link:active {
+  background-color: var(--color-dark-gray);
+  color: white;
+}
+
+.post-share {
+  position: relative;
+}
+
+.share-tooltip {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);;
+  z-index: 1;
+
+  background-color: var(--color-very-dark-gray);
+  padding: 1.8rem 3.6rem;
+  color: white;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.share-tooltip::before {
+  content: "";
+
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 1.2rem;
+  border-style: solid;
+  border-color: transparent;
+
+  border-top: 1.2rem solid var(--color-very-dark-gray);
+}
+
+.share-text {
+  font-size: 1.3rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-right: 1.5rem;
+}
+
+.share-icon {
+  line-height: 1;
+}
 
 .add-to-card-btn {
   display: flex;
@@ -143,10 +197,7 @@ body {
   transition: all 0.15s ease-in-out;
 }
 
-.add-to-card-btn:hover,
-.add-to-card-btn:active {
-  background-color: #1e4034;
-}
+
 
 /* Tablets, below 944px = 59em */
 @media (max-width: 944px) {
