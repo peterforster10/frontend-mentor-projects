@@ -199,6 +199,10 @@ body {
     font-size: 56.25%;
   }
 
+  .main {
+      margin: 2rem;
+  }
+
   .post {
     flex-direction: column;
   }
