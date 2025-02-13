@@ -145,7 +145,7 @@ body {
 /**********************/
 
 .hero-container {
-  flex-basis: 140rem;
+  flex-basis: 150rem;
   padding: 0 3rem 7rem 3rem;
 
   display: flex;
@@ -159,7 +159,7 @@ body {
 
 .hero-img-left-box,
 .hero-img-right-box {
-  max-width: 25%;
+  max-width: 30%;
 }
 
 .hero-img {
@@ -320,8 +320,8 @@ body {
 
 .footer {
   background-image: url(../images/desktop/image-footer.jpg);
+  background-position: center;
   background-size: cover;
-
 }
 
 .footer-wrapper {
@@ -400,6 +400,10 @@ body {
     padding: 0 2rem;
   }
 
+  .footer {
+    background-image: url(../images/tablet/image-footer.jpg);
+  }
+
   .footer-container {
     flex-direction: column;
     flex-basis: 60rem;
@@ -432,5 +436,10 @@ body {
 
   .about-img-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  .footer {
+    background-image: url(../images/mobile/image-footer.jpg);
   }
 }
