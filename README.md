@@ -70,3 +70,12 @@ https://frontend-mentor-projects-peterforster.netlify.app/08-meet-landing-page
 
 Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/08-Meet-landing-page
+
+
+## 09 Article preview component
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/09-article-preview-component
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/09-Article-preview-component
