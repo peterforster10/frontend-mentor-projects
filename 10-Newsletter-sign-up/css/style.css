@@ -1,0 +1,277 @@
+:root {
+  --color-white: #fff;
+
+  --color-very-dark-gray: #48556a;
+  --color-dark-gray: #6d7f97;
+  --color-gray: #9eafc2;
+  --color-light-gray: #ecf2f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: var(--color-light-gray);
+  color: var(--color-very-dark-gray);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-basis: 72rem;
+}
+
+.post {
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  align-items: stretch;
+}
+
+.post-img-box {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  flex-basis: 40%;
+  overflow: hidden;
+}
+
+.post-img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-body {
+  padding: 3.5rem 3.5rem 0 3.5rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.5px;
+}
+
+.post-text {
+  color: var(--color-dark-gray);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem 3.5rem 3.5rem;
+}
+
+.author {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.author-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+}
+
+.author-name {
+  color: var(--color-very-dark-gray);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.author-date {
+  color: var(--color-gray);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.share-link:link,
+.share-link:visited {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  border-radius: 100px;
+  transition: all 0.15s ease-in-out;
+}
+
+.share-link:hover,
+.share-link:active {
+  background-color: var(--color-gray);
+}
+
+.share-link:hover img,
+.share-link:active img {
+  filter: brightness(100);
+}
+
+.post-share {
+  position: relative;
+}
+
+.share-tooltip {
+  position: absolute;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);;
+  z-index: 1;
+
+  background-color: var(--color-very-dark-gray);
+  padding: 1.8rem 3.6rem;
+  color: white;
+  border-radius: 10px;
+
+  display: none;
+  align-items: center;
+  gap: 1.4rem;
+
+}
+
+.post-footer.show-tooltip .share-tooltip {
+  display: flex;
+}
+
+.share-tooltip::before {
+  content: "";
+
+  position: absolute;
+  top: 5.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 1.2rem;
+  border-style: solid;
+  border-color: transparent;
+
+  border-top: 1.2rem solid var(--color-very-dark-gray);
+}
+
+.share-text {
+  font-size: 1.3rem;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-right: 1.5rem;
+}
+
+.share-icon {
+  line-height: 1;
+}
+
+
+
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .main {
+      margin: 2rem;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post-img-box {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  
+  .post-footer {
+    padding: 1.5rem 3.5rem;
+  }
+
+  .post-footer.show-tooltip {
+    display: block;
+
+    background-color: var(--color-very-dark-gray);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .post-footer.show-tooltip .author  {
+    display: none;
+  }
+
+  .post-footer.show-tooltip .post-share {
+    position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .post-footer.show-tooltip .share-tooltip {
+    position: initial;
+    top: initial;
+    left: initial;
+    transform: initial;
+    padding: 0;
+
+  }
+
+  .post-footer.show-tooltip .share-tooltip::before {
+    display: none;
+  }
+
+  .post-footer.show-tooltip .share-link {
+    background-color: var(--color-dark-gray);
+  }
+
+  .post-footer.show-tooltip .share-link img {
+    filter: brightness(100);
+  }
+
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/
