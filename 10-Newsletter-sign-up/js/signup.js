@@ -16,19 +16,22 @@ const submitSignUp = (e) => {
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
 
-  try {
-    validateFormData(data);
-    signUp(data);
-  } catch (e) {
-    $emailError.textContent = e.message;
+  const validation = validateFormData(data);
+  if (validation) {
+    $emailError.textContent = validation.message;
     $emailInput.classList.add('has-error');
+    return;
   }
+
+  signUp(data);
 }
 
 const validateFormData = (data) => {
   const { email } = data;
   if (!email || !email.trim() || !validateEmail(email)) {
-    throw new Error('Valid email required.');
+    return {
+      message: 'Valid email required.',
+    };
   }
 }
 

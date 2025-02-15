@@ -261,6 +261,8 @@ body {
 
   .sign-up-img-box {
     order: -1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   
   .sign-up-img {
