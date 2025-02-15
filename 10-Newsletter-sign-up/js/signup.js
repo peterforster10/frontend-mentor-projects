@@ -41,7 +41,12 @@ const validateEmail = (email) => {
 };
 
 const signUp = (data) => {
-
+  const { email } = data;
+  const user = {
+    email,
+  };
+  localStorage.setItem('user', JSON.stringify(user));
+  window.location.href = 'success.html';
 }
 
 init();

@@ -13,21 +13,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js" defer></script>
+  <script src="js/success.js" defer></script>
 
 </head>
 <body>
+  <div class="container">
+    <main class="main">
+      <div class="success-card">
+        <div class="icon-success-box">
+          <img src="./assets/images/icon-success.svg" class="icon-success" alt="" />
+        </div>
+        <h1 class="heading-primary">Thanks for subscribing!</h1>
 
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
+        <p class="text">A confirmation email has been sent to <strong><span class="email-output"></span></strong>.
+        Please open it and click the button inside to confirm your subscription.</p>
+        
+        <button class="btn btn-primary dismiss-btn"><span>Dismiss message</span></button>
+      </div>
+    </main>
+  </div>
   
 </body>
 </html>
