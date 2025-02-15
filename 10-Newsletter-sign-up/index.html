@@ -22,10 +22,6 @@
     <main class="main">
       <div class="sign-up-card">
 
-        <div class="sign-up-img-box-mobile">
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration Sign Up" class="sign-up-img" />
-        </div>
-
         <div class="sign-up-content">
           <h1 class="heading-primary">
             Stay updated!
@@ -59,10 +55,12 @@
             </button>
           </form>
         </div>
-        
-        <div class="sign-up-img-box">
+
+        <picture class="sign-up-img-box">
+          <source media="(min-width: 945px)" srcset="./assets/images/illustration-sign-up-desktop.svg" />
+          <source media="(max-width: 944px)" srcset="./assets/images/illustration-sign-up-mobile.svg" />
           <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration Sign Up" class="sign-up-img" />
-        </div>
+        </picture>
       </div>
     </main>
   </div>

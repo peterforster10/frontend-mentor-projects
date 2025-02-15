@@ -55,13 +55,10 @@ body {
 }
 
 .sign-up-img-box {
+  display: block;
   border-radius: 15px;
   flex-basis: 45%;
   overflow: hidden;
-}
-
-.sign-up-img-box-mobile {
-  display: none;
 }
 
 .sign-up-img {
@@ -232,6 +229,11 @@ body {
 
 
 /* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+
+} */
+
+/* Tablets, below 944px = 59em */
 @media (max-width: 944px) {
   html {
     /* Decreases all rem values on the page. */
@@ -258,11 +260,7 @@ body {
   }
 
   .sign-up-img-box {
-    display: none;
-  }
-  
-  .sign-up-img-box-mobile {
-    display: block;
+    order: -1;
   }
   
   .sign-up-img {
