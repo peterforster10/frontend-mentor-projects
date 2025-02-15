@@ -1,55 +1,31 @@
 'use strict';
 
-const $signUpForm = document.querySelector('.sign-up-form');
-const $emailInput = document.querySelector('.email');
-const $emailError = document.querySelector('.email-error');
 
-const init = () => {
-
-  $emailInput.focus();
-  $signUpForm.addEventListener('submit', submitSignUp);
+const init = async () => {
+  const userData = await loadUserData();
+  console.log(userData);
+  initUser(userData);
 }
 
-const submitSignUp = (e) => {
-  e.preventDefault();
 
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
-
-  const validation = validateFormData(data);
-  if (validation) {
-    $emailError.textContent = validation.message;
-    $emailInput.classList.add('has-error');
-    return;
-  }
-
-  signUp(data);
+const loadUserData = async () => {
+  const response = await fetch('user_data.json');
+  const userData = await response.json();
+  return userData;
 }
 
-const validateFormData = (data) => {
-  const { email } = data;
-  if (!email || !email.trim() || !validateEmail(email)) {
-    return {
-      message: 'Valid email required.',
-    };
-  }
-}
+const initUser = (userData) => {
+  const $userImgBox = document.querySelector('.user-img-box');
+  const $userImg = document.createElement('img');
+  const $userFullName = document.querySelector('.user-full-name');
 
-const validateEmail = (email) => {
-  return email
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
+  const fullName = `${userData.firstName} ${userData.lastName}`;
 
-const signUp = (data) => {
-  const { email } = data;
-  const user = {
-    email,
-  };
-  localStorage.setItem('user', JSON.stringify(user));
-  window.location.href = 'success.html';
+  $userImg.setAttribute('src', userData.imageUrl);
+  $userImg.setAttribute('alt', fullName);
+  $userImgBox.append($userImg);
+
+  $userFullName.textContent = fullName;
 }
 
 init();
