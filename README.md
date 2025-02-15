@@ -79,3 +79,12 @@ https://frontend-mentor-projects-peterforster.netlify.app/09-article-preview-com
 
 Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/09-Article-preview-component
+
+
+## 10 Newsletter sign up
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/10-newsletter-sign-up
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/10-Newsletter-sign-up
