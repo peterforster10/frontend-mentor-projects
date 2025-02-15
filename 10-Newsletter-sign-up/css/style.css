@@ -301,6 +301,10 @@ body {
     margin-bottom: 4rem;
   }
 
+  
+  .form-control {
+    margin-bottom: 2.5rem;
+  }
 
   .form-label label,
   .form-label .form-error {
