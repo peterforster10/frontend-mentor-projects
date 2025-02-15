@@ -1,0 +1,330 @@
+:root {
+  --color-red: #ff6257;
+  --color-red-transparent: rgb(255, 98, 87, 0.1);
+
+  --color-very-dark-gray: #242742;
+  --color-dark-gray: #36384e;
+  --color-gray: #949494;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: var(--color-dark-gray);
+  color: var(--color-very-dark-gray);
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-card {
+  flex-basis: 85rem;
+  border-radius: 30px;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+}
+
+.success-card {
+  flex-basis: 43rem;
+  border-radius: 30px;
+  background-color: white;
+  padding: 4.5rem 5rem;
+}
+
+.sign-up-img-box {
+  display: block;
+  border-radius: 15px;
+  flex-basis: 45%;
+  overflow: hidden;
+}
+
+.sign-up-img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon-success-box {
+  margin-bottom: 3rem;
+}
+
+.icon-success {
+  width: 50px;
+  height: 50px;
+}
+
+.sign-up-content {
+  flex: 1;
+  padding: 7rem 7rem 7rem 4rem;
+}
+
+
+.heading-primary {
+  color: var(--color-very-dark-gray);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.success-card .heading-primary {
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: var(--color-very-dark-gray);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.success-card .text {
+  margin-bottom: 3rem;
+}
+
+.list {
+  list-style-type: none;
+  color: var(--color-very-dark-gray);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.icon-list {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 1.3rem 2rem;
+  color: var(--color-very-dark-gray);
+  font-size: 1.5rem;
+  font-family: inherit;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  transition: all 0.3s;
+  background-color: var(--primary-transparent-color);
+  line-height: 1;
+}
+
+.form-control input:focus {
+  outline: 1px solid var(--color-very-dark-gray);
+}
+
+.form-control input::placeholder {
+  color: var(--color-gray)
+}
+
+.form-control input.has-error {
+  border: 1px solid var(--color-red);
+  background-color: var(--color-red-transparent);
+}
+
+.form-control .form-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.form-control label {
+  color: var(--color-very-dark-gray);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-error {
+  color: var(--color-red);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn {
+  font-family: inherit;
+  width: 100%;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.8rem 3.2rem;
+  border-radius: 7px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: var(--color-very-dark-gray);
+  color: white;
+  position: relative;
+}
+
+.btn-primary:focus {
+  outline: none;
+}
+
+/* For nice transition with the linear-gradient. */
+
+.btn-primary::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: linear-gradient(45deg, #ff527a, #fd6937);
+  border-radius: 7px;
+  z-index: 0;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.btn-primary:hover::before,
+.btn-primary:active::before, 
+.btn-primary:focus::before {
+  opacity: 1;
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+
+} */
+
+/* Tablets, below 944px = 59em */
+@media (max-width: 944px) {
+  html {
+    /* Decreases all rem values on the page. */
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .main {
+    align-items: flex-start;
+  }
+
+  .sign-up-card {
+    padding: 0;
+    border-radius: initial;
+    flex-direction: column;
+  }
+
+  .success-card {
+    align-self: center;
+  }
+
+  .sign-up-img-box {
+    order: -1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .sign-up-img {
+    width: 100%;
+  }
+
+  .sign-up-content {
+    padding: 4rem 2.5rem;
+  }
+
+  .success-card {
+    padding: 0 2.5rem;
+  }
+
+  .icon-success-box {
+    margin-bottom: 4rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .success-card .heading-primary {
+    margin-bottom: 2.5rem;
+  }
+
+  .success-card .text {
+    margin-bottom: 5rem;
+  }
+
+  .text, .list {
+    font-size: 1.6rem;
+  }
+
+  .list {
+    margin-bottom: 4rem;
+  }
+
+  
+  .form-control {
+    margin-bottom: 2.5rem;
+  }
+
+  .form-label label,
+  .form-label .form-error {
+    font-size: 1.4rem;
+  }
+
+  .form-control input, .btn {
+    font-size: 1.6rem;
+  }
+
+}
+
+/* Tablets, below 944px = 59em */
+/* @media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+} */
+
+/* Phones, below 550px = 34em */
+/* @media (max-width: 550px) {
+
+}*/

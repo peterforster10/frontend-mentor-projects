@@ -1,3 +1,5 @@
+'use strict';
+
 const init = () => {
   const $postFooter = document.querySelector('.post-footer');
   const $shareLink = document.querySelector('.share-link');
