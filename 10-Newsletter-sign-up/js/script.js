@@ -6,11 +6,11 @@ const $emailError = document.querySelector('.email-error');
 
 const init = () => {
 
-  $signUpForm.addEventListener('submit', signUp);
   $emailInput.focus();
+  $signUpForm.addEventListener('submit', submitSignUp);
 }
 
-const signUp = (e) => {
+const submitSignUp = (e) => {
   e.preventDefault();
 
   const formData = new FormData(e.target);
@@ -18,6 +18,7 @@ const signUp = (e) => {
 
   try {
     validateFormData(data);
+    signUp(data);
   } catch (e) {
     $emailError.textContent = e.message;
     $emailInput.classList.add('has-error');
@@ -38,5 +39,9 @@ const validateEmail = (email) => {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
+
+const signUp = (data) => {
+
+}
 
 init();

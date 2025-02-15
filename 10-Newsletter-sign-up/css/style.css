@@ -1,5 +1,6 @@
 :root {
   --color-red: #ff6257;
+  --color-red-transparent: rgb(255, 98, 87, 0.1);
 
   --color-very-dark-gray: #242742;
   --color-dark-gray: #36384e;
@@ -49,6 +50,10 @@ body {
   border-radius: 15px;
   flex-basis: 45%;
   overflow: hidden;
+}
+
+.sign-up-img-box-mobile {
+  display: none;
 }
 
 .sign-up-img {
@@ -129,6 +134,7 @@ body {
 
 .form-control input.has-error {
   border: 1px solid var(--color-red);
+  background-color: var(--color-red-transparent);
 }
 
 .form-control .form-label {
@@ -174,6 +180,8 @@ body {
   position: relative;
 }
 
+/* For nice transition with the linear-gradient. */
+
 .btn-primary::before {
   position: absolute;
   content: '';
@@ -205,63 +213,59 @@ body {
     font-size: 56.25%;
   }
 
-  .main {
-    margin: 2rem;
+  body {
+    background-color: white;
   }
 
-  .post {
+  .container {
+    align-items: flex-start;
+  }
+
+  .main {
+    flex-basis: initial;
+  }
+
+  .sign-up-card {
+    padding: 0;
+    border-radius: initial;
     flex-direction: column;
   }
 
-  .post-img-box {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
+  .sign-up-img-box {
+    display: none;
   }
-
   
-  .post-footer {
-    padding: 1.5rem 3.5rem;
-  }
-
-  .post-footer.show-tooltip {
+  .sign-up-img-box-mobile {
     display: block;
-
-    background-color: var(--color-very-dark-gray);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  }
+  
+  .sign-up-img {
+    width: 100%;
   }
 
-  .post-footer.show-tooltip .author  {
-    display: none;
+  .sign-up-content {
+    padding: 4rem 2.5rem;
   }
 
-  .post-footer.show-tooltip .post-share {
-    position: initial;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .heading-primary {
+    font-size: 4rem;
   }
 
-  .post-footer.show-tooltip .share-tooltip {
-    position: initial;
-    top: initial;
-    left: initial;
-    transform: initial;
-    padding: 0;
-
+  .text, .list {
+    font-size: 1.6rem;
   }
 
-  .post-footer.show-tooltip .share-tooltip::before {
-    display: none;
+  .list {
+    margin-bottom: 4rem;
   }
 
-  .post-footer.show-tooltip .share-link {
-    background-color: var(--color-dark-gray);
+  .form-label label,
+  .form-label .form-error {
+    font-size: 1.4rem;
   }
 
-  .post-footer.show-tooltip .share-link img {
-    filter: brightness(100);
+  .form-control input, .btn {
+    font-size: 1.6rem;
   }
 
 }
