@@ -85,7 +85,7 @@ body {
 
 
 .heading-primary {
-  color: var(--color-dark-gray);
+  color: var(--color-very-dark-gray);
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;
@@ -193,7 +193,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--color-dark-gray);
+  background: var(--color-very-dark-gray);
   color: white;
   position: relative;
 }
