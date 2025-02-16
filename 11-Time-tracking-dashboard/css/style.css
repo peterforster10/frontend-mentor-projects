@@ -86,22 +86,78 @@ body {
   line-height: 1.2;
 }
 
-.subtitle {
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top {
+  background-position: right 1rem top -1rem;
+  background-size: 6.5rem;
+  background-repeat: no-repeat;
+
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  padding-top: 5rem;
+}
+
+.card-content {
+  flex: 1;
+  
+  margin-top: -13px;
+  padding: 2.5rem;
+  background-color: var(--color-dark-blue);
+  border-radius: 13px;
+}
+
+.work-card .card-top {
+  background-color: var(--color-orange-work);
+  background-image: url(../images/icon-work.svg);
+}
+
+.play-card .card-top {
+  background-color: var(--color-blue-play);
+  background-image: url(../images/icon-play.svg);
+}
+
+.study-card .card-top {
+  background-color: var(--color-red-study);
+  background-image: url(../images/icon-study.svg);
+}
+
+
+.exercise-card .card-top {
+  background-color: var(--color-green-exercise);
+  background-image: url(../images/icon-exercise.svg);
+}
+
+.social-card .card-top {
+  background-color: var(--color-violet-social);
+  background-image: url(../images/icon-social.svg);
+}
+
+.self-care-card .card-top {
+  background-color: var(--color-yellow-self-care);
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-secondary {
   color: var(--color-pale-blue);
   font-size: 1.4rem;
   font-weight: 400;
-}
-
-.text {
-  color: var(--color-very-dark-gray);
-  font-size: 1.5rem;
-  line-height: 1.6;
-  font-weight: 400;
-  margin-bottom: 1.8rem;
-}
-
-.success-card .text {
-  margin-bottom: 3rem;
 }
 
 .nav-list {
@@ -182,52 +238,32 @@ body {
 
 .btn {
   font-family: inherit;
-  width: 100%;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 1.8rem 3.2rem;
-  border-radius: 7px;
+  border-radius: 100px;
   text-align: center;
   border: none;
   cursor: pointer;
   line-height: 1;
 }
 
-.btn-primary {
-  background: var(--color-very-dark-gray);
+.btn-secondary {
+  height: 2.8rem;
+  width: 2.8rem;
+  background: none;
   color: white;
-  position: relative;
 }
 
-.btn-primary:focus {
-  outline: none;
+.btn-secondary:focus {
+  outline: 1px solid white;
 }
 
-/* For nice transition with the linear-gradient. */
-
-.btn-primary::before {
-  position: absolute;
-  content: '';
-  inset: 0;
-  background: linear-gradient(45deg, #ff527a, #fd6937);
-  border-radius: 7px;
-  z-index: 0;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
+.btn-icon {
+  width: 1.8rem;
 }
-
-.btn-primary:hover::before,
-.btn-primary:active::before, 
-.btn-primary:focus::before {
-  opacity: 1;
-}
-
-.btn-primary span {
-  position: relative;
-  z-index: 1;
-}
-
 
 
 /* Tablets, below 944px = 59em */
