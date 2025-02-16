@@ -88,3 +88,12 @@ https://frontend-mentor-projects-peterforster.netlify.app/10-newsletter-sign-up
 
 Code:
 https://github.com/peterforster10/frontend-mentor-projects/tree/main/10-Newsletter-sign-up
+
+
+## 11 Time tracking dashboard
+
+Live:
+https://frontend-mentor-projects-peterforster.netlify.app/11-time-tracking-dashboard
+
+Code:
+https://github.com/peterforster10/frontend-mentor-projects/tree/main/11-Time-tracking-dashboard
