@@ -10,8 +10,9 @@
   
   --color-very-dark-blue: #0f1424;
   --color-dark-blue: #1c1f4a;
-  --color-desaturated-blue: #6f76c8;
+  --color-desaturated-blue: #34397b;
   --color-pale-blue: #bdc1ff;
+
 }
 
 * {
@@ -43,12 +44,14 @@ body {
 }
 
 .main {
-  flex-basis: 100rem;
+  flex-basis: 110rem;
+  margin: 2rem;
 }
 
 .report-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 3rem;
 }
 
@@ -61,7 +64,7 @@ body {
 
 .user-card {
   background-color: var(--color-blue);
-  padding: 3rem 3rem 7rem 3rem;
+  padding: 3rem 3rem 8rem 3rem;
   border-radius: 13px;
 }
 
@@ -76,15 +79,49 @@ body {
   border: 3px solid white;
 }
 
-.period-nav {
-  padding: 2.5rem 3rem;
-}
-
 .user-full-name {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 300;
   line-height: 1.2;
 }
+
+.period-nav {
+  padding: 3rem 3rem;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list li {
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+.nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-list .nav-link:link,
+.nav-list .nav-link:visited {
+  color: var(--color-pale-blue);
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-list .nav-link:hover,
+.nav-list .nav-link:active {
+  color: white;
+}
+
+.nav-list .nav-link.active {
+  color: white;
+}
+
+
+
 
 .card {
   display: flex;
@@ -103,11 +140,19 @@ body {
 
 .card-content {
   flex: 1;
-  
+
   margin-top: -13px;
   padding: 2.5rem;
   background-color: var(--color-dark-blue);
   border-radius: 13px;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.card-content:hover,
+.card-content:active {
+  background-color: var(--color-desaturated-blue);
+  cursor: pointer;
 }
 
 .work-card .card-top {
@@ -145,14 +190,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
 
 .card-title {
   color: white;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   line-height: 1.4;
 }
+
+
+.card-hours {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
 
 .text-secondary {
   color: var(--color-pale-blue);
@@ -160,81 +215,6 @@ body {
   font-weight: 400;
 }
 
-.nav-list {
-  list-style-type: none;
-}
-
-.nav-list li {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.nav-list .nav-link:link,
-.nav-list .nav-link:visited {
-  color: var(--color-pale-blue);
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
-}
-
-.nav-list .nav-link:hover,
-.nav-list .nav-link:active {
-  color: white;
-}
-
-.nav-list .nav-link.active {
-  color: white;
-}
-
-.form-control {
-  margin-bottom: 2rem;
-}
-
-.form-control input {
-  width: 100%;
-  padding: 1.3rem 2rem;
-  color: var(--color-very-dark-gray);
-  font-size: 1.5rem;
-  font-family: inherit;
-  border: 1px solid #bbb;
-  border-radius: 7px;
-  transition: all 0.3s;
-  background-color: var(--primary-transparent-color);
-  line-height: 1;
-}
-
-.form-control input:focus {
-  outline: 1px solid var(--color-very-dark-gray);
-}
-
-.form-control input::placeholder {
-  color: var(--color-gray)
-}
-
-.form-control input.has-error {
-  border: 1px solid var(--color-red);
-  background-color: var(--color-red-transparent);
-}
-
-.form-control .form-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8rem;
-}
-
-.form-control label {
-  color: var(--color-very-dark-gray);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.form-error {
-  color: var(--color-red);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
 
 .btn {
   font-family: inherit;
@@ -277,6 +257,62 @@ body {
     /* Decreases all rem values on the page. */
     /* 9px / 16px = 56.25% */
     font-size: 56.25%;
+  }
+
+  .main {
+    margin: 8rem 2rem;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: initial;
+  }
+
+  .user-card {
+    padding: 2.5rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .user-img-box {
+    margin-bottom: 0;
+  }
+
+  .user-full-name {
+    font-size: 2.5rem;
+  }
+
+  .period-nav {
+    padding: 2rem 3rem;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list li {
+    margin-bottom: 0;
+  }
+
+  .card-header {
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-hours {
+    font-size: 4rem;
+    margin-bottom: 0;
   }
 
 
