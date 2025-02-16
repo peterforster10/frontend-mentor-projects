@@ -1,6 +1,6 @@
 'use strict';
 
-let state = {
+const state = {
   currentPeriod: 'weekly',
 };
 
