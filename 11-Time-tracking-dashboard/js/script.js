@@ -23,6 +23,7 @@ const initUser = (userData) => {
 
   $userImg.setAttribute('src', userData.imageUrl);
   $userImg.setAttribute('alt', fullName);
+  $userImg.classList.add('user-img')
   $userImgBox.append($userImg);
 
   $userFullName.textContent = fullName;

@@ -13,21 +13,21 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue: hsl(246, 80%, 60%)
+- Blue: #5847eb
 
-- Light red (work): hsl(15, 100%, 70%)
-- Soft blue (play): hsl(195, 74%, 62%)
-- Light red (study): hsl(348, 100%, 68%)
-- Lime green (exercise): hsl(145, 58%, 55%)
-- Violet (social): hsl(264, 64%, 52%)
-- Soft orange (self care): hsl(43, 84%, 65%)
+- Light red (work): #ff8c66
+- Soft blue (play): #56c2e6
+- Light red (study): #ff5c7c
+- Lime green (exercise): #4acf81
+- Violet (social): #7536d3
+- Soft orange (self care): #f1c65b
 
 ### Neutral
 
-- Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
-- Desaturated blue: hsl(235, 45%, 61%)
-- Pale Blue: hsl(236, 100%, 87%)
+- Very dark blue: #0f1424
+- Dark blue: #1c1f4a
+- Desaturated blue: #6f76c8
+- Pale Blue: #bdc1ff
 
 ## Typography
 

@@ -7,8 +7,12 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -19,23 +23,96 @@
         <div class="report-card">
           <div class="user-card">
             <div class="user-img-box"></div>
-            <div>Report for</div>
+            <div class="subtitle">Report for</div>
             <h1 class="user-full-name"></h1>
           </div>
-          <ul>
-            <li>Daily</li>
-            <li>Weekly</li>
-            <li>Monthly</li>
-          </ul>
+          <nav class="period-nav">
+            <ul class="nav-list">
+              <li><a href="#" class="nav-link daily">Daily</a></li>
+              <li><a href="#" class="nav-link weekly active">Weekly</a></li>
+              <li><a href="#" class="nav-link monthly">Monthly</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="work-card-wrapper">
-          <div class="work-card">
-            <div>
-              <h2>Work</h2>
-              <button>...</button>
+        
+        <div class="work-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Work</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
             </div>
             <div class="work-card-hours"></div>
-            <div class="work-card-last-period"></div>
+            <div class="work-card-last-period text-secondary"></div>
+          </div>
+        </div>
+
+        <div class="play-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Play</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
+            </div>
+            <div class="work-card-hours"></div>
+            <div class="work-card-last-period text-secondary"></div>
+          </div>
+        </div>
+
+        <div class="study-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Study</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
+            </div>
+            <div class="work-card-hours"></div>
+            <div class="work-card-last-period text-secondary"></div>
+          </div>
+        </div>
+
+        
+        <div class="exercise-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Excercise</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
+            </div>
+            <div class="work-card-hours"></div>
+            <div class="work-card-last-period text-secondary"></div>
+          </div>
+        </div>
+
+        
+        <div class="social-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Social</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
+            </div>
+            <div class="work-card-hours"></div>
+            <div class="work-card-last-period text-secondary"></div>
+          </div>
+        </div>
+
+        
+        <div class="self-care-card card-wrapper">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Self care</h2>
+              <button class="btn btn-secondary">
+                <img src="images/icon-ellipsis.svg" alt="..." />
+              </button>
+            </div>
+            <div class="work-card-hours"></div>
+            <div class="work-card-last-period text-secondary"></div>
           </div>
         </div>
       </div>
